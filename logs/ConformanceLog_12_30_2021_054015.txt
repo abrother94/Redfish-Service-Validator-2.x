@@ -1,0 +1,266 @@
+INFO - Redfish Service Validator, version 2.0.5
+INFO - 
+INFO - Target URI: https://172.17.8.144:8889
+INFO - authtype: Basic
+config: config/psme25.ini
+debugging: True
+forceauth: False
+ip: https://172.17.8.144:8889
+logdir: ./logs
+oemcheck: True
+password: ******
+schema_directory: ./SchemaFiles/metadata
+username: admin
+verbose: 0
+INFO - Start time: 12/30/21 - 05:40:15
+INFO - 
+INFO - Setting up service...
+INFO - Attempt 1 of /redfish/v1/
+INFO - Response Time for GET to /redfish/v1/: 0.0020392449987411965 seconds.
+INFO - Attempt 1 of /redfish/v1/SessionService/Sessions
+INFO - Response Time for GET to /redfish/v1/SessionService/Sessions: 0.0006205239988048561 seconds.
+INFO - Attempt 1 of /redfish/v1
+INFO - Response Time for GET to /redfish/v1: 0.00046011299855308607 seconds.
+INFO - Redfish Version of Service: 1.1.0
+INFO - Attempt 1 of /redfish/v1/$metadata
+INFO - Response Time for GET to /redfish/v1/$metadata: 0.000551274002646096 seconds.
+INFO - Constructing metadata...
+INFO - Attempt 1 of /redfish/v1/metadata/EthernetSwitch_v1.xml
+INFO - Response Time for GET to /redfish/v1/metadata/EthernetSwitch_v1.xml: 0.0027785330021288246 seconds.
+INFO - NOT writing online XML to file: EthernetSwitch_v1.xml
+INFO - Description of service: MySystem
+INFO - 
+*** /redfish/v1/
+INFO - Attempt 1 of /redfish/v1/
+INFO - Response Time for GET to /redfish/v1/: 0.0008183610007108655 seconds.
+WARNING - Schema not found for ServiceRoot.v1_1_0:StorageSystems
+INFO - 	 Type (ServiceRoot.v1_4_0.ServiceRoot), GET SUCCESS (time: 0:00:00.016787)
+INFO - Attempt 1 of /redfish/v1/UpdateService
+INFO - Response Time for GET to /redfish/v1/UpdateService: 0.0004066260007675737 seconds.
+INFO - Attempt 1 of /redfish/v1/Systems
+INFO - Response Time for GET to /redfish/v1/Systems: 0.00416904799931217 seconds.
+INFO - Attempt 1 of /redfish/v1/Chassis
+INFO - Response Time for GET to /redfish/v1/Chassis: 0.00048566400073468685 seconds.
+INFO - Attempt 1 of /redfish/v1/Managers
+INFO - Response Time for GET to /redfish/v1/Managers: 0.0009043529971677344 seconds.
+INFO - Attempt 1 of /redfish/v1/TaskService
+INFO - Response Time for GET to /redfish/v1/TaskService: 0.0004040710009576287 seconds.
+INFO - Attempt 1 of /redfish/v1/SessionService
+INFO - Response Time for GET to /redfish/v1/SessionService: 0.0009065039994311519 seconds.
+INFO - Attempt 1 of /redfish/v1/AccountService
+INFO - Response Time for GET to /redfish/v1/AccountService: 0.00043747499876189977 seconds.
+INFO - Attempt 1 of /redfish/v1/EventService
+INFO - Response Time for GET to /redfish/v1/EventService: 0.00047072700181161053 seconds.
+INFO - Attempt 1 of /redfish/v1/Registries
+INFO - Response Time for GET to /redfish/v1/Registries: 0.007954196997161489 seconds.
+INFO - Attempt 1 of /redfish/v1/Switches
+INFO - Response Time for GET to /redfish/v1/Switches: 0.00045894299910287373 seconds.
+INFO - 	 PASS
+INFO - 
+*** /redfish/v1/UpdateService
+INFO - 	 Type (UpdateService.v1_1_0.UpdateService), GET SUCCESS (time: 0:00:00.015762)
+INFO - 	 PASS
+INFO - 
+*** /redfish/v1/UpdateService/SimpleUpdateActionInfo
+INFO - Attempt 1 of /redfish/v1/UpdateService/SimpleUpdateActionInfo
+INFO - Response Time for GET to /redfish/v1/UpdateService/SimpleUpdateActionInfo: 0.0005374929969548248 seconds.
+INFO - 	 Type (ActionInfo.v1_0_0.ActionInfo), GET SUCCESS (time: 0:00:00.014889)
+INFO - 	 PASS
+INFO - 
+*** /redfish/v1/Systems
+INFO - 	 Type (ComputerSystemCollection.ComputerSystemCollection), GET SUCCESS (time: 0:00:00.028426)
+INFO - 	 PASS
+INFO - 
+*** /redfish/v1/Chassis
+INFO - 	 Type (ChassisCollection.ChassisCollection), GET SUCCESS (time: 0:00:00.014467)
+INFO - Attempt 1 of /redfish/v1/Chassis/1
+INFO - Response Time for GET to /redfish/v1/Chassis/1: 0.0047932879970176145 seconds.
+INFO - 	 PASS
+INFO - 
+*** /redfish/v1/Chassis/1
+WARNING - Couldn't get schema for object, skipping OemObject Intel_RackScale
+WARNING - Couldn't get schema for object, skipping OemObject Intel_RackScale
+INFO - 	 Type (Chassis.v1_7_0.Chassis), GET SUCCESS (time: 0:00:00.029806)
+WARNING - IndicatorLED: The given property is deprecated by revision: This property has been deprecated in favor of the LocationIndicatorActive property.
+WARNING - PCIeDevices: The given property is deprecated by revision: This property has been deprecated in favor of the PCIeDevices resource collection in the root of this resource.
+INFO - Attempt 1 of /redfish/v1/Managers/1
+INFO - Response Time for GET to /redfish/v1/Managers/1: 0.00046405900138779543 seconds.
+INFO - 	 PASS
+WARNING - Couldn't get schema for object, skipping OemObject Intel_RackScale
+WARNING - Couldn't get schema for object, skipping OemObject Intel_RackScale
+WARNING - Couldn't get schema for object, skipping OemObject Object
+WARNING - Couldn't get schema for object, skipping OemObject Intel_RackScale
+WARNING - Couldn't get schema for object, skipping OemObject Object
+WARNING - Couldn't get schema for object, skipping OemObject Intel_RackScale
+WARNING - Couldn't get schema for object, skipping OemObject Intel_RackScale
+WARNING - Couldn't get schema for object, skipping OemObject Object
+WARNING - Couldn't get schema for object, skipping OemObject Intel_RackScale
+WARNING - Couldn't get schema for object, skipping OemObject Object
+INFO - 
+*** /redfish/v1/Managers
+INFO - 	 Type (ManagerCollection.ManagerCollection), GET SUCCESS (time: 0:00:00.015493)
+INFO - 	 PASS
+INFO - 
+*** /redfish/v1/Managers/1
+WARNING - Couldn't get schema for object, skipping OemObject Intel_RackScale
+INFO - 	 Type (Manager.v1_4_0.Manager), GET SUCCESS (time: 0:00:00.017444)
+INFO - Attempt 1 of /redfish/v1/Managers/1/EthernetInterfaces
+INFO - Response Time for GET to /redfish/v1/Managers/1/EthernetInterfaces: 0.00041719100045156665 seconds.
+INFO - Attempt 1 of /redfish/v1/Managers/1/NetworkProtocol
+INFO - Response Time for GET to /redfish/v1/Managers/1/NetworkProtocol: 0.0012173549985163845 seconds.
+INFO - Attempt 1 of /redfish/v1/Managers/1/LogServices
+INFO - Response Time for GET to /redfish/v1/Managers/1/LogServices: 0.0004550830017251428 seconds.
+INFO - 	 PASS
+WARNING - Couldn't get schema for object, skipping OemObject Intel_RackScale
+WARNING - Couldn't get schema for object, skipping OemObject Intel_RackScale
+WARNING - Couldn't get schema for object, skipping OemObject Object
+WARNING - Couldn't get schema for object, skipping OemObject Intel_RackScale
+WARNING - Couldn't get schema for object, skipping OemObject Intel_RackScale
+WARNING - Couldn't get schema for object, skipping OemObject Object
+INFO - 
+*** /redfish/v1/Managers/1/EthernetInterfaces
+INFO - 	 Type (EthernetInterfaceCollection.EthernetInterfaceCollection), GET SUCCESS (time: 0:00:00.017267)
+INFO - Attempt 1 of /redfish/v1/Managers/1/EthernetInterfaces/1
+INFO - Response Time for GET to /redfish/v1/Managers/1/EthernetInterfaces/1: 0.0003980149995186366 seconds.
+INFO - 	 PASS
+INFO - 
+*** /redfish/v1/Managers/1/EthernetInterfaces/1
+WARNING - Couldn't get schema for object, skipping OemObject Intel_RackScale
+WARNING - Couldn't get schema for object, skipping OemObject Intel_RackScale
+INFO - 	 Type (EthernetInterface.v1_1_0.EthernetInterface), GET SUCCESS (time: 0:00:00.017319)
+WARNING - NeighborPort not defined in schema Complex Intel_RackScale Resource.OemObject (check version, spelling and casing)
+WARNING - VLANs: The given property is deprecated by revision: This property has been deprecated in favor of newer methods indicating multiple VLANs.
+INFO - Attempt 1 of /redfish/v1/Managers/1/EthernetInterfaces/1/VLANs
+INFO - Response Time for GET to /redfish/v1/Managers/1/EthernetInterfaces/1/VLANs: 0.00682253300328739 seconds.
+WARNING - SupportedProtocols not defined in schema Complex Intel_RackScale Resource.OemObject (check version, spelling and casing)
+INFO - 	 PASS
+WARNING - Couldn't get schema for object, skipping OemObject Intel_RackScale
+WARNING - Couldn't get schema for object, skipping OemObject Intel_RackScale
+WARNING - Couldn't get schema for object, skipping OemObject Object
+WARNING - Couldn't get schema for object, skipping OemObject Intel_RackScale
+WARNING - Couldn't get schema for object, skipping OemObject Object
+WARNING - Couldn't get schema for object, skipping OemObject Intel_RackScale
+WARNING - Couldn't get schema for object, skipping OemObject Intel_RackScale
+WARNING - Couldn't get schema for object, skipping OemObject Object
+WARNING - Couldn't get schema for object, skipping OemObject Intel_RackScale
+WARNING - Couldn't get schema for object, skipping OemObject Object
+INFO - 
+*** /redfish/v1/Managers/1/EthernetInterfaces/1/VLANs
+INFO - 	 Type (VLanNetworkInterfaceCollection.VLanNetworkInterfaceCollection), GET SUCCESS (time: 0:00:00.021404)
+INFO - 	 PASS
+INFO - 
+*** /redfish/v1/Managers/1/NetworkProtocol
+INFO - 	 Type (ManagerNetworkProtocol.v1_0_0.ManagerNetworkProtocol), GET SUCCESS (time: 0:00:00.021313)
+INFO - 	 PASS
+INFO - 
+*** /redfish/v1/Managers/1/LogServices
+INFO - 	 Type (LogServiceCollection.LogServiceCollection), GET SUCCESS (time: 0:00:00.016603)
+INFO - Attempt 1 of /redfish/v1/Managers/1/LogServices/1
+INFO - Response Time for GET to /redfish/v1/Managers/1/LogServices/1: 0.0014173310009937268 seconds.
+INFO - 	 PASS
+INFO - 
+*** /redfish/v1/Managers/1/LogServices/1
+INFO - 	 Type (LogService.v1_1_1.LogService), GET SUCCESS (time: 0:00:00.017366)
+INFO - Attempt 1 of /redfish/v1/Managers/1/LogServices/1/Entries
+INFO - Response Time for GET to /redfish/v1/Managers/1/LogServices/1/Entries: 0.00046214900066843256 seconds.
+INFO - 	 PASS
+INFO - 
+*** /redfish/v1/Managers/1/LogServices/1/Entries
+INFO - 	 Type (LogEntryCollection.LogEntryCollection), GET SUCCESS (time: 0:00:00.016589)
+INFO - 	 PASS
+INFO - 
+*** /redfish/v1/Managers/1/LogServices/1/Entries/1
+INFO - 	 Type (LogEntry.v1_4_1.LogEntry), GET SUCCESS (time: 0)
+INFO - 	 PASS
+INFO - 
+*** /redfish/v1/TaskService
+INFO - 	 Type (TaskService.v1_0_0.TaskService), GET SUCCESS (time: 0:00:00.017303)
+INFO - Attempt 1 of /redfish/v1/TaskService/Tasks
+INFO - Response Time for GET to /redfish/v1/TaskService/Tasks: 0.00044230899948161095 seconds.
+INFO - 	 PASS
+INFO - 
+*** /redfish/v1/TaskService/Tasks
+INFO - 	 Type (TaskCollection.TaskCollection), GET SUCCESS (time: 0:00:00.017293)
+INFO - 	 PASS
+INFO - 
+*** /redfish/v1/SessionService
+INFO - 	 Type (SessionService.v1_1_2.SessionService), GET SUCCESS (time: 0:00:00.022129)
+INFO - Attempt 1 of /redfish/v1/SessionService/Sessions
+INFO - Response Time for GET to /redfish/v1/SessionService/Sessions: 0.0022836450007162057 seconds.
+INFO - 	 PASS
+INFO - 
+*** /redfish/v1/SessionService/Sessions
+INFO - 	 Type (SessionCollection.SessionCollection), GET SUCCESS (time: 0:00:00.024151)
+INFO - 	 PASS
+INFO - 
+*** /redfish/v1/AccountService
+INFO - 	 Type (AccountService.v1_3_0.AccountService), GET SUCCESS (time: 0:00:00.016348)
+INFO - Attempt 1 of /redfish/v1/AccountService/Accounts
+INFO - Response Time for GET to /redfish/v1/AccountService/Accounts: 0.0008979549966170453 seconds.
+INFO - Attempt 1 of /redfish/v1/AccountService/Roles
+INFO - Response Time for GET to /redfish/v1/AccountService/Roles: 0.0003953420018660836 seconds.
+INFO - 	 PASS
+INFO - 
+*** /redfish/v1/AccountService/Accounts
+INFO - 	 Type (ManagerAccountCollection.ManagerAccountCollection), GET SUCCESS (time: 0:00:00.040881)
+INFO - Attempt 1 of /redfish/v1/AccountService/Accounts/1
+INFO - Response Time for GET to /redfish/v1/AccountService/Accounts/1: 0.0006533839987241663 seconds.
+INFO - 	 PASS
+INFO - 
+*** /redfish/v1/AccountService/Accounts/1
+INFO - 	 Type (ManagerAccount.v1_1_0.ManagerAccount), GET SUCCESS (time: 0:00:00.035002)
+INFO - Attempt 1 of /redfish/v1/AccountService/Roles/Administrator
+INFO - Response Time for GET to /redfish/v1/AccountService/Roles/Administrator: 0.0004120599987800233 seconds.
+INFO - 	 PASS
+INFO - 
+*** /redfish/v1/AccountService/Roles
+INFO - 	 Type (RoleCollection.RoleCollection), GET SUCCESS (time: 0:00:00.026535)
+INFO - 	 PASS
+INFO - 
+*** /redfish/v1/AccountService/Roles/Administrator
+INFO - 	 Type (Role.v1_2_1.Role), GET SUCCESS (time: 0:00:00.019489)
+INFO - 	 PASS
+INFO - 
+*** /redfish/v1/EventService
+INFO - 	 Type (EventService.v1_0_2.EventService), GET SUCCESS (time: 0:00:00.017176)
+WARNING - EventTypesForSubscription: The given property is deprecated by revision: This property has been deprecated.  Starting with Redfish Specification v1.6 (Event v1.3), subscriptions are based on the RegistryPrefix and ResourceType properties and not on the EventType property.
+INFO - Attempt 1 of /redfish/v1/EventService/Subscriptions
+INFO - Response Time for GET to /redfish/v1/EventService/Subscriptions: 0.0009363770004711114 seconds.
+INFO - 	 PASS
+INFO - 
+*** /redfish/v1/EventService/Subscriptions
+INFO - 	 Type (EventDestinationCollection.EventDestinationCollection), GET SUCCESS (time: 0:00:00.024822)
+INFO - 	 PASS
+INFO - 
+*** /redfish/v1/Registries
+INFO - 	 Type (MessageRegistryFileCollection.MessageRegistryFileCollection), GET SUCCESS (time: 0:00:00.021725)
+INFO - Attempt 1 of /redfish/v1/Registries/1
+INFO - Response Time for GET to /redfish/v1/Registries/1: 0.0004441169985511806 seconds.
+INFO - Attempt 1 of /redfish/v1/Registries/2
+INFO - Response Time for GET to /redfish/v1/Registries/2: 0.0007090050021361094 seconds.
+INFO - 	 PASS
+INFO - 
+*** /redfish/v1/Registries/1
+INFO - 	 Type (MessageRegistryFile.v1_1_0.MessageRegistryFile), GET SUCCESS (time: 0:00:00.014094)
+INFO - 	 PASS
+INFO - 
+*** /redfish/v1/Registries/2
+INFO - 	 Type (MessageRegistryFile.v1_1_0.MessageRegistryFile), GET SUCCESS (time: 0:00:00.017192)
+INFO - 	 PASS
+INFO - 
+*** /redfish/v1/Switches
+INFO - 	 Type (SwitchCollection.SwitchCollection), GET SUCCESS (time: 0:00:00.010066)
+INFO - 	 PASS
+INFO - Metadata: Namespaces missing from $metadata: set()
+INFO - 
+Elapsed time: 0:00:48
+INFO - metadataNamespaces: 112   
+pass: 250   
+passAction: 1   
+passGet: 31   
+skipNoSchema: 1   
+skipOptional: 128   
+unverifiedAdditional.complex: 2   
+warnDeprecated: 4   
+warningPresent: 5   
+INFO - Validation has succeeded.
